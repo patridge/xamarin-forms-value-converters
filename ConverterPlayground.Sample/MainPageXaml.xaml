@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ConverterPlayground.Sample.MainPageXaml"
+	xmlns:converters="clr-namespace:ConverterPlayground">
+<!--	;assembly=ConverterPlayground-->
+	<Page.Resources>
+		<ResourceDictionary>
+			<converters:PluralizationIntConverter
+				x:Key="Pluralize" />
+		</ResourceDictionary>
+	</Page.Resources>
+	<ContentPage.Content>
+		<StackLayout
+			Orientation="Vertical"
+			VerticalOptions="FillAndExpand"
+			HorizontalOptions="FillAndExpand">
+			<StackLayout.Padding>
+				<OnPlatform
+					x:TypeArguments="Thickness"
+					iOS="0, 20, 0, 0" />
+			</StackLayout.Padding>
+			<StackLayout
+				Orientation="Horizontal">
+				<Label
+					Text="{Binding ZeroIntValue}" />
+				<Label
+					Text="{Binding ZeroIntValue, Converter={StaticResource Pluralize}, ConverterParameter='Thing,Things'}" />
+			</StackLayout>
+			<StackLayout
+				Orientation="Horizontal">
+				<Label
+					Text="{Binding OneIntValue}" />
+				<Label
+					Text="{Binding OneIntValue, Converter={StaticResource Pluralize}, ConverterParameter='Medium,Media'}" />
+			</StackLayout>
+			<StackLayout
+				Orientation="Horizontal">
+				<Label
+					Text="{Binding BigIntValue}" />
+				<Label
+					Text="{Binding BigIntValue, Converter={StaticResource Pluralize}, ConverterParameter='Fungus,Fungi'}" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
