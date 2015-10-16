@@ -82,4 +82,22 @@ Global
 		{E94F3721-A63A-487C-AD2D-90710C4B90E6}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{E94F3721-A63A-487C-AD2D-90710C4B90E6}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = application/xml
+		$0.XmlFormattingPolicy = $2
+		$2.DefaultFormat = $3
+		$3.AttributesInNewLine = True
+		$2.inheritsSet = Mono
+		$2.inheritsScope = application/xml
+		$2.scope = application/xml
+		$0.TextStylePolicy = $4
+		$4.inheritsSet = null
+		$4.scope = application/xaml+xml
+		$0.XmlFormattingPolicy = $5
+		$5.inheritsSet = null
+		$5.scope = application/xaml+xml
+	EndGlobalSection
 EndGlobal
