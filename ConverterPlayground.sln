@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterPlayground.Sample.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterPlayground.Sample.Droid", "Droid\ConverterPlayground.Sample.Droid.csproj", "{82985970-2A8A-4013-94EF-9399AB1F4DC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterPlayground.Sample.UITests", "UITests\ConverterPlayground.Sample.UITests.csproj", "{E94F3721-A63A-487C-AD2D-90710C4B90E6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterPlayground", "ConverterPlayground\ConverterPlayground.csproj", "{95E9D77B-F0C2-49BE-91FD-F606F78D1C98}"
 EndProject
 Global
